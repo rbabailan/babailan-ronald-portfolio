@@ -15,14 +15,13 @@ function Projects() {
                     initial={{ scale: 0, rotate: 360 }}
                     animate={{ scale: 1, rotate: 0 }}
                     transition={{ duration: 1 }}
-                    className={style.backButton} onClick={() => navigate(-1)}>
+                    className={style.backButton} onClick={() => navigate("/")}>
                     <img className={style.backIcon} src={BackIcon} alt="back icon" />
                 </motion.button>
             </div>
             <div className={style.projectsDiv}>
-                <h1>Projects</h1>
+                <h2>PROJECTS</h2>
                 <ProjectsList img={chasyPhotos} title={"Chasy Products"}>
-
                 </ProjectsList>
                 <ProjectsList img={chasyPhotos} text={"cqweigbcqwecqwe"} title={"Chasy Products"}></ProjectsList>
                 <ProjectsList img={chasyPhotos} text={"cqweigbcqwecqwe"} title={"Chasy Products"}></ProjectsList>
