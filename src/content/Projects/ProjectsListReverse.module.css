@@ -2,6 +2,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 0 5px 5px 0;
 }
 
 .projectsListReverse {
@@ -25,7 +26,8 @@
 }
 
 .title {
-    font-weight: 400;
+    font-weight: 600;
+    font-size: 2rem;
 }
 
 .description li {
@@ -48,10 +50,26 @@
 
     .primaryImg {
         width: 100%;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .img {
+        border-radius: 20px 20px 0 0;
     }
 
     .description {
         width: 100%;
-        border-radius: 0 0 5px 5px;
+        border-radius: 0 0 20px 20px;
+        box-shadow: rgba(255, 255, 255, 0.15) 1.95px 1.95px 2.6px;
+    }
+
+    .title {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width:480px) {
+    .title {
+        font-size: 1.2rem;
     }
 }

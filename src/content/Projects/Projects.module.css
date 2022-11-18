@@ -44,3 +44,20 @@
 .techStack {
     font-weight: 600;
 }
+
+@media (max-width:768px) {
+    .projectTitle h2 {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width:480px) {
+    .projectTitle h2 {
+        line-height: 2;
+        font-size: 1.2rem;
+    }
+
+    .projectTitle p {
+        font-size: 0.8rem;
+    }
+}

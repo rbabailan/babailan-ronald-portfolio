@@ -56,6 +56,7 @@ nav li a:active {
         left: -100%;
         transition: left 0.4s ease-in;
         text-align: center;
+        font-size: 1.6rem;
     }
 
     nav {
@@ -68,5 +69,11 @@ nav li a:active {
 
     nav li {
         display: block;
+    }
+}
+
+@media(max-width:480px) {
+    .navbarDiv {
+        font-size: 1.2rem;
     }
 }

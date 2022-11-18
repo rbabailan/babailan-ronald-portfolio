@@ -74,22 +74,20 @@ function Projects() {
                     <p className={style.techStack}>Tech Stack</p>
                     <ul>
                         <li>HTML</li>
-                        <li>HTML</li>
-                        <li>HTML</li>
-                        <li>HTML</li>
-                        <li>HTML</li>
-                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Bootstrap</li>
+                        <li>Javascript</li>
+                        <li>Php</li>
+                        <li>Firebase</li>
                     </ul>
                 </ProjectsList>
-                <ProjectsListReverse img={chasyPhotos} title={"Chasy Products"}>
+                <ProjectsListReverse img={chasyPhotos} title={"Mobile Ordering System"}>
                     <p className={style.techStack}>Tech Stack</p>
                     <ul>
-                        <li>HTML</li>
-                        <li>HTML</li>
-                        <li>HTML</li>
-                        <li>HTML</li>
-                        <li>HTML</li>
-                        <li>HTML</li>
+                        <li>Android Studio</li>
+                        <li>Java</li>
+                        <li>Adobe XD</li>
+                        <li>Firebase</li>
                     </ul>
                 </ProjectsListReverse>
 
