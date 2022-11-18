@@ -26,15 +26,12 @@ function Projects() {
                     <h2>PROJECTS</h2>
                     <p>These are the projects I've created.</p>
                 </div>
-                <ProjectsList img={chasyPhotos} title={"Chasy Products"}>
+                <ProjectsList img={chasyPhotos} title={"Mobile Facebook Clone"}>
                     <p className={style.techStack}>Tech Stack</p>
                     <ul>
-                        <li>HTML</li>
-                        <li>HTML</li>
-                        <li>HTML</li>
-                        <li>HTML</li>
-                        <li>HTML</li>
-                        <li>HTML</li>
+                        <li>Reactjs</li>
+                        <li>Material UI</li>
+                        <li>Firebase</li>
                     </ul>
                 </ProjectsList>
                 <ProjectsListReverse img={chasyPhotos} title={"Chasy Products"}>
@@ -70,7 +67,9 @@ function Projects() {
                         <li>HTML</li>
                     </ul>
                 </ProjectsListReverse>
-                <ProjectsList img={chasyPhotos} title={"Chasy Products"}>
+                <ProjectsList img={chasyPhotos}
+                    title={"Web Admin Panel"}
+                    desc={"This is connected to our mobile ordering system. This web panel manage the orders in the mobile ordering system."}>
                     <p className={style.techStack}>Tech Stack</p>
                     <ul>
                         <li>HTML</li>
@@ -81,7 +80,8 @@ function Projects() {
                         <li>Firebase</li>
                     </ul>
                 </ProjectsList>
-                <ProjectsListReverse img={chasyPhotos} title={"Mobile Ordering System"}>
+                <ProjectsListReverse img={chasyPhotos} title={"Mobile Ordering System"}
+                    desc={"This is connected to our mobile ordering system. This web panel manage the orders in the mobile ordering system."}>
                     <p className={style.techStack}>Tech Stack</p>
                     <ul>
                         <li>Android Studio</li>

@@ -10,7 +10,6 @@
 
 .aboutSection {
     height: 100vh;
-    padding-top: 45px;
 }
 
 .backButton {
@@ -35,36 +34,32 @@
 .aboutPart {
     width: 50%;
     text-align: center;
-    color: var(--black-gray);
-    padding: 10px;
+    color: var(--dark-blue);
 }
 
 .aboutPartTitle,
 .skillsPartTitle {
-    font-weight: 300;
-    font-size: 1.6rem;
-    font-family: 'Montserrat Alternates', sans-serif;
-    margin-bottom: 10px;
+    padding: 14px 20px;
+}
+
+.aboutPartTitle h2,
+.skillsPartTitle h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    letter-spacing: 0.6px;
+    text-align: center;
+    line-height: 0.9;
 }
 
 .aboutPartParagraph {
     text-align: left;
     font-size: 1rem;
+    padding: 1em 0;
 }
+
 
 .skillsPart {
     width: 50%;
-    text-align: center;
-    color: var(--white);
-    padding: 10px;
-}
-
-.skillsPart {
-    width: 50%;
-    text-align: center;
-    font-weight: 300;
-    font-size: 1.6rem;
-    font-family: 'Montserrat Alternates', sans-serif;
     color: var(--white);
 }
 
@@ -73,13 +68,14 @@
     font-size: 1rem;
 }
 
-.hardSkillsLists li {
+.hardSkillsList {
     margin: 0;
     padding: 0;
     display: block;
     font-size: 1rem;
     width: 50px;
 }
+
 
 
 @media (max-width:768px) {
@@ -94,5 +90,18 @@
 
     .clipPath {
         display: none;
+    }
+
+    .aboutPartTitle h2,
+    .skillsPartTitle h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width:480px) {
+
+    .aboutPartTitle h2,
+    .skillsPartTitle h2 {
+        font-size: 1.6rem;
     }
 }
