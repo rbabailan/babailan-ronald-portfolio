@@ -17,29 +17,29 @@
     height: 100%;
 }
 
-li {
+nav li {
     display: inline-block;
     padding: 10px 20px;
     margin: 10px 5px;
     border-radius: 10px;
     font-family: 'Poppins', Helvetica, sans-serif;
-    font-weight: 400;
+    font-weight: 500;
 }
 
-li:hover {
+nav li:hover {
     background-color: #ffffff;
     background-color: #f0f0f0;
 }
 
 
-li a {
+nav li a {
     text-decoration: none;
-    color: #000;
+    color: var(--black-gray);
 }
 
-li a:active {
+nav li a:active {
     text-decoration: none;
-    color: blue;
+    color: var(--dark-blue);
 }
 
 
@@ -66,7 +66,7 @@ li a:active {
         left: 0;
     }
 
-    li {
+    nav li {
         display: block;
     }
 }

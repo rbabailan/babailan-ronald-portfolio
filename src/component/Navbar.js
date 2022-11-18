@@ -35,7 +35,7 @@ function Navbar() {
                 checkWidth < 768 &&
                 <div style={{ position: "absolute", right: 0 }}>
                     <button className={style.menuButton} onClick={toggleNavFunc}>
-                        <img clasName={style.menuIcon} src={menu} alt="menu-icon" width="36px" />
+                        <img className={style.menuIcon} src={menu} alt="menu-icon" width="36px" />
                     </button>
                 </div>
             }

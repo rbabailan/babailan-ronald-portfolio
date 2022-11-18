@@ -78,8 +78,14 @@
 }
 
 @media (max-width:768px) {
+    .contentStyle {
+        -webkit-clip-path: polygon(100% 40%, 100% 100%, 40% 100%);
+        clip-path: polygon(100% 40%, 100% 100%, 40% 100%);
+        min-height: 480px;
+    }
+
     .flexSB {
-        height: 100%;
+        height: 100vh;
     }
 
     .homeInfo {
@@ -101,10 +107,6 @@
         width: 100%;
     }
 
-    .contentStyle {
-        -webkit-clip-path: polygon(100% 40%, 100% 100%, 40% 100%);
-        clip-path: polygon(100% 40%, 100% 100%, 40% 100%);
-    }
 }
 
 @media (max-width:480px) {
