@@ -22,6 +22,7 @@
     width: 45%;
     align-self: center;
     padding: 0 20px;
+    z-index: -1;
 }
 
 .homeInfoMe {
@@ -79,8 +80,8 @@
 
 @media (max-width:768px) {
     .contentStyle {
-        -webkit-clip-path: polygon(100% 40%, 100% 100%, 40% 100%);
-        clip-path: polygon(100% 40%, 100% 100%, 40% 100%);
+        -webkit-clip-path: polygon(100% 60%, 60% 100%, 100% 100%);
+        clip-path: polygon(100% 60%, 60% 100%, 100% 100%);
         min-height: 480px;
     }
 
