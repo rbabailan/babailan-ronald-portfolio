@@ -1,16 +1,12 @@
 .text {
-    display: block;
-    padding: 1em;
+  display: block;
+  padding: 5px 10px 5px 5px;
+  position: relative;
+  border-top: 1px solid var(--white);
+  border-left: 4px solid var(--white);
 }
 
-.container {
-    padding: 0.5em;
-    list-style: none;
-}
-
-.line {
-    height: 2px;
-    width: 100%;
-    background-color: #fff;
-    margin-bottom: 1em;
+.skillLists {
+  list-style: none;
+  margin-bottom: 5px;
 }
