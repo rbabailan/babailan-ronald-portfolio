@@ -54,6 +54,7 @@
 }
 
 .contactInfo div {
+  padding: 30px;
   display: flex;
   align-items: center;
 }
