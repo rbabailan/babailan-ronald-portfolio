@@ -78,6 +78,9 @@ function About() {
                   <List
                     title={"Programming languages"}
                     text={"Python Java PHP"}></List>
+                  <List
+                    title={"Version Control & Others"}
+                    text={"Git, GitHub, Vercel, 000webhost"}></List>
                 </ul>
               </div>
             </motion.div>

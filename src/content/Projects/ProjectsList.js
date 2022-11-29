@@ -22,6 +22,7 @@ function ProjectsList(props) {
 
   useEffect(() => {
     if (inView) {
+      setIsLoaded(true);
       controls.start("animate");
     }
   }, [controls, inView]);
@@ -39,10 +40,10 @@ function ProjectsList(props) {
           showArrows={true}
           showThumbs={false}
           showStatus={false}
-          infiniteLoop={true}
+          infiniteLoop={false}
           transitionTime={500}
           transition={true}
-          autoPlay={true}
+          autoPlay={isLoaded}
           interval={5000}>
           {props.mImgData.map((data, index) => (
             <div key={index}>

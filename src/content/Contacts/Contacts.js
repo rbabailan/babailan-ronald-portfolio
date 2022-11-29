@@ -4,116 +4,100 @@ import AnimatedPage from "../../component/AnimatedPage";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import BackIcon from "../../img/BackIcon.png";
-import emailjs from "@emailjs/browser";
 import facebookIcon from "../../img/facebook.svg";
 import githubIcon from "../../img/github.svg";
 import twitterIcon from "../../img/twitter.svg";
 import instagramIcon from "../../img/instagram.svg";
 import linkedInIcon from "../../img/linkedin.svg";
+import gmailIcon from "../../img/gmail.svg";
+import HackerRankIcon from "../../img/hackerrank.svg";
+import ContactLinks from "./ContactLinks";
+import ReactToolTip from "react-tooltip";
+import FreeCodeCampIcon from "../../img/freecodecamp.svg";
 
 function Contacts() {
   const navigate = useNavigate();
-  const form = useRef();
 
-  const sendEmail = (e) => {
-    e.preventDefault();
-    emailjs
-      .sendForm(
-        "service_3cte6f7",
-        "template_jhxrplg",
-        form.current,
-        "oVvmC_SSiBeA-sAfK"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-  };
   return (
     <div style={{ overflowX: "hidden" }}>
-      <div style={{ position: "absolute", zIndex: "1" }}>
-        <motion.button
-          initial={{ scale: 0, rotate: 360 }}
-          animate={{ scale: 1, rotate: 0 }}
-          transition={{ duration: 1 }}
-          className={style.backButton}
-          onClick={() => navigate("/")}>
-          <img className={style.backIcon} src={BackIcon} alt="back icon" />
-        </motion.button>
+      <div className={style.contentStyle}></div>
+      <div style={{ position: "relative" }}>
+        <div style={{ position: "absolute", zIndex: "1" }}>
+          <motion.button
+            initial={{ scale: 0, rotate: 360 }}
+            animate={{ scale: 1, rotate: 0 }}
+            transition={{ duration: 1 }}
+            className={style.backButton}
+            onClick={() => navigate("/")}>
+            <img className={style.backIcon} src={BackIcon} alt="back icon" />
+          </motion.button>
+        </div>
       </div>
       <AnimatedPage>
         <div className={style.contactSection}>
           <div className={style.contactSectionTitle}>
-            <h2>SKILLS</h2>
-            <p>Tech tools and frameworks that I've used.</p>
+            <h2>Profiles</h2>
+            <p>Social accounts</p>
           </div>
           <div className={style.flexSB}>
             <div className={style.contactInfo}>
-              <h2>Social Accounts</h2>
-              <a className={style.socialLinks} href="" target="_blank">
-                <div>
-                  <img src={githubIcon} width="32px" />
-                  <span>@Ronald-Bn</span>
-                </div>
-              </a>
-              <a
-                className={style.socialLinks}
-                href="https://twitter.com/ronald_bn26"
-                target="_blank">
-                <div>
-                  <img src={twitterIcon} />
-                  <span>@ronald_bn26</span>
-                </div>
-              </a>
-              <a
-                className={style.socialLinks}
-                href="https://github.com/Ronald-Bn"
-                target="_blank">
-                <div>
-                  <img src={linkedInIcon} />
-                  <span>@ronald-babailan</span>
-                </div>
-              </a>
-              <a
-                className={style.socialLinks}
-                href="https://www.instagram.com/macronald26/"
-                target="_blank">
-                <div>
-                  <img src={instagramIcon} />
-                  <span>@macronald26</span>
-                </div>
-              </a>
-              <a
-                className={style.socialLinks}
-                href="https://www.facebook.com/profile.php?id=100009021094163"
-                target="_blank">
-                <div>
-                  <img src={facebookIcon} />
-                  <span>@Ronald Babailan</span>
-                </div>
-              </a>
-            </div>
-            <div className={style.formContact}>
-              <div
-                style={{ width: "80%", maxWidth: "500px", margin: "0 auto" }}>
-                <h2>Wanna hire me?</h2>
-                <form ref={form} onSubmit={sendEmail}>
-                  <label>Name</label>
-                  <input type="text" name="user_name" />
-                  <label>Email</label>
-                  <input type="email" name="user_email" />
-                  <label>Message</label>
-                  <textarea rows={6} name="message" />
-                  <input type="submit" value="Send" />
-                </form>
+              <div>
+                <ContactLinks
+                  links="https://www.facebook.com/profile.php?id=100009021094163"
+                  icon={facebookIcon}
+                  tooltip="Facebook"
+                />
+                <ContactLinks
+                  links="https://twitter.com/ronald_bn26"
+                  icon={twitterIcon}
+                  tooltip="Twitter"
+                />
+              </div>
+              <div>
+                <ContactLinks
+                  links="https://www.linkedin.com/in/ronald-babailan/"
+                  icon={linkedInIcon}
+                  tooltip="LinkedIn"
+                />
+              </div>
+              <div>
+                <ContactLinks
+                  links="https://www.freecodecamp.org/Ronald-Bn"
+                  icon={FreeCodeCampIcon}
+                  tooltip="FreecodeCamp"
+                />
+              </div>
+              <div>
+                <ContactLinks
+                  links="https://www.hackerrank.com/ronaldbabailan01"
+                  icon={HackerRankIcon}
+                  tooltip="HackerRank"
+                />
+                <ContactLinks
+                  links="https://github.com/Ronald-Bn"
+                  icon={githubIcon}
+                  tooltip="GitHub"
+                />
+              </div>
+              <div>
+                <ContactLinks
+                  links="https://mail.google.com/mail/u/0/?fs=1&to=ronaldbabailan0026@gmail.com&tf=cm"
+                  icon={gmailIcon}
+                  tooltip="Gmail"
+                  text="ronaldbabailan0026@gmail.com"
+                />
+              </div>
+              <div>
+                <ContactLinks
+                  links="https://www.instagram.com/macronald26/"
+                  icon={instagramIcon}
+                  tooltip="Instagram"
+                />
               </div>
             </div>
           </div>
         </div>
+        <ReactToolTip />
       </AnimatedPage>
     </div>
   );
