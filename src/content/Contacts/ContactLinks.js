@@ -18,6 +18,7 @@ function ContactLinks(props) {
           transition="transition"
           src={props.icon}
           alt={props.tooltip + "-logo"}
+          width="50px"
         />
       </a>
       {text && <p>{props.text}</p>}

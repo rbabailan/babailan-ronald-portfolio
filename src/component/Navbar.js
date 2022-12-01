@@ -8,12 +8,6 @@ function Navbar() {
   const [toggleNav, setToggleNav] = useState(false);
   const [checkWidth, setCheckWidth] = useState(window.innerWidth);
 
-  const animations = {
-    initial: { opacity: 1, x: "100vw" },
-    animate: { opacity: 1, x: 0 },
-    transition: { duration: 1 },
-  };
-
   const checkFunc = () => {
     setCheckWidth(window.innerWidth);
   };
@@ -57,7 +51,7 @@ function Navbar() {
               <Link to="/Projects">Projects</Link>
             </li>
             <li>
-              <Link to="/About">About & Skills</Link>
+              <Link to="/About">Why Hire Me?</Link>
             </li>
             <li>
               <Link to="/contacts">Profiles</Link>

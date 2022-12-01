@@ -28,30 +28,22 @@ function About() {
             <motion.div
               initial={{ opacity: 0, x: -100 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 1 }}>
+              exit={{ opacity: 0, x: -100 }}
+              transition={{ duration: 0.6 }}>
               <div className={style.aboutPartTitle}>
                 <h2>ABOUT</h2>
-                <p>My Education, Interests, etc.</p>
+                <p></p>
               </div>
               <div className={style.aboutPartContents}>
-                <h2>Introduction</h2>
                 <p>
-                  I started to like coding when I was in Senior High. Then I
-                  studied Information Technology from STI.
+                  I started to like coding when I was in Senior High, reason why
+                  I pursued to study in my higher education Information
+                  Technology. Currently, I'm seeking to obtain full-time
+                  position as a web developer and join a company that will take
+                  advantage of my skills in web development while I gain
+                  expertise in Web Development.
                   <br />
                 </p>
-                <h2>Education</h2>
-                <p>2018 - 2022</p>
-                <p>Bachelor of Science in Information Technology</p>
-                <p>STI College Caloocan</p>
-                <h2>Hobbies</h2>
-                <p>
-                  My most hobby is playing basketball ever since I was High
-                  school student. In fact, I was varsity player in high school
-                  to senior high.
-                  <br />
-                </p>
-                <p>109 Samson Road corner Caimito Street, Caloocan City 1400</p>
               </div>
             </motion.div>
           </div>
@@ -59,7 +51,8 @@ function About() {
             <motion.div
               initial={{ opacity: 0, x: 100 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 1 }}>
+              exit={{ opacity: 0, x: 100 }}
+              transition={{ duration: 0.6 }}>
               <div className={style.skillsPartTitle}>
                 <h2>SKILLS</h2>
                 <p>Tech tools and frameworks that I've used.</p>

@@ -60,6 +60,7 @@ function ProjectsList(props) {
         transition={{ duration: 1 }}
         className={style.description}>
         <h1 className={style.title}>{props.title}</h1>
+        <h4>{"(" + props.type + ")"}</h4>
         <p className={style.paragraph}>{props.desc}</p>
         <div className={style.projectLinks}>
           <span>

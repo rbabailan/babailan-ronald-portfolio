@@ -11,9 +11,8 @@
 
 .projectsList:nth-child(odd) .description {
   width: 49%;
-  padding: 20px 10px;
+  padding: 12px 10px;
   background-color: var(--black-gray);
-  border-radius: 5px 0 0 5px;
   color: var(--white);
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
@@ -27,7 +26,6 @@
 .primaryImg {
   width: 60%;
   box-shadow: rgba(0, 0, 0, 0.15) -1.95px -1.95px 2.6px;
-  border-radius: 5px 0 0 5px;
 }
 
 .primaryImg img {
@@ -37,16 +35,25 @@
 
 .description {
   width: 49%;
-  padding: 20px 10px;
+  padding: 12px 10px;
   background-color: var(--white);
-  border-radius: 0 5px 5px 0;
   color: var(--black-gray);
 }
 
 .description h1 {
+  display: inline;
   font-weight: 700;
-  font-size: 2rem;
-  line-height: 0.9;
+  font-size: 1.3rem;
+}
+
+.description h4::before {
+  content: " ";
+}
+
+.description h4 {
+  display: inline;
+  font-weight: 500;
+  font-size: 1rem;
 }
 
 .description p {
@@ -111,10 +118,6 @@
     width: 100% !important;
     border-radius: 0 0 5px 5px !important;
     box-shadow: rgba(0, 0, 0, 0.15) -1.95px 1.95px 2.6px;
-  }
-
-  .description h1 {
-    font-size: 1.6rem;
   }
 }
 

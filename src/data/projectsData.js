@@ -1,6 +1,7 @@
 const projectsData = [
   {
-    title: "Mobile Facebook Clone",
+    title: "Facebook Mobile",
+    type: "Clone Website",
     desc: "Duplicated facebook mobile version using the tech stack below.",
     liveLink: "https://mobile-facebook-clone.vercel.app/",
     githubLink: "https://github.com/Ronald-Bn/mobile-facebook-clone",
@@ -30,6 +31,7 @@ const projectsData = [
   },
   {
     title: "Wiki Pirates",
+    type: "Biography Website",
     desc: "A biography website about my favorite characters in Pirates of the Caribbean with cool parallax scrolling effects.",
     liveLink: "https://ronald-bn.github.io/pirates-of-the-caribbean/",
     githubLink: "https://github.com/Ronald-Bn/pirates-of-the-caribbean",
@@ -59,6 +61,7 @@ const projectsData = [
   },
   {
     title: "Consultant Hub",
+    type: "Business Website",
     desc: "A business Website template for a friend for his feasilibity study.",
     liveLink: "https://consultant-hub-mh5j.vercel.app/",
     githubLink: "https://github.com/Ronald-Bn/consultant-hub",
@@ -87,7 +90,8 @@ const projectsData = [
     ],
   },
   {
-    title: "Mobile ordering Sys.(Mobile App)",
+    title: "Mobile Ordering System",
+    type: "Mobile Application",
     desc: "An Android application with One time Password or OTP phone number authentication",
     liveLink:
       "https://apkfab.com/chasy-products/com.example.capstoneprojectv13/apk?h=0002ab071de690bbe337c449fcea1a7b925ad593321dde793e63642f3b3037bc",
@@ -120,7 +124,8 @@ const projectsData = [
     ],
   },
   {
-    title: "Mobile ordering Sys.(Admin panel)",
+    title: "Mobile Ordering System",
+    type: "Admin Panel Website",
     desc: "A web admin panel that manage the orders and users in Mobile Ordering System.",
     liveLink: "https://chasyproducts.000webhostapp.com/login.php",
     githubLink:
@@ -140,6 +145,45 @@ const projectsData = [
       },
       {
         img: "https://firebasestorage.googleapis.com/v0/b/hosting-storage-403c5.appspot.com/o/projects%2Fweb-admin-panel%2Fadmin-panel-3-min.png?alt=media&token=58aefd2a-21af-4abd-bd89-2e466d43d2a6",
+        alt: "web admin panel users page",
+      },
+    ],
+    techStackLists: [
+      { techLists: "HTML" },
+      { techLists: "CSS" },
+      { techLists: "Javascript" },
+      { techLists: "jQuery" },
+      { techLists: "Ajax" },
+      { techLists: "Php" },
+      { techLists: "Firebase" },
+    ],
+  },
+  {
+    title: "Red Camia",
+    type: "Inventory System",
+    desc: "A web admin panel that manage the orders and users in Mobile Ordering System.",
+    liveLink: "https://redcamiainventorysystem.000webhostapp.com/login.php",
+    githubLink:
+      "https://github.com/Ronald-Bn/mobile-ordering-system-web-admin-panel",
+    mImgData: [
+      {
+        img: "https://firebasestorage.googleapis.com/v0/b/hosting-storage-403c5.appspot.com/o/projects%2Fredcamia%2Finventory-system-min.png?alt=media&token=8d2e3bf6-173f-4277-b9fb-71999a32f4cb",
+        alt: "web admin panel login page",
+      },
+      {
+        img: "https://firebasestorage.googleapis.com/v0/b/hosting-storage-403c5.appspot.com/o/projects%2Fredcamia%2Finventory-system-1-min.png?alt=media&token=cd631e7c-0981-4cfb-bb67-49afc16b17fa",
+        alt: "web admin panel login page",
+      },
+      {
+        img: "https://firebasestorage.googleapis.com/v0/b/hosting-storage-403c5.appspot.com/o/projects%2Fredcamia%2Finventory-system-2-min.png?alt=media&token=d9df3054-36fa-4955-a9fe-752ca7df8b68",
+        alt: "web admin panel home page",
+      },
+      {
+        img: "https://firebasestorage.googleapis.com/v0/b/hosting-storage-403c5.appspot.com/o/projects%2Fredcamia%2Finventory-system-3-min.png?alt=media&token=2abc4d94-e330-4019-9e6b-53d8fad34dcc",
+        alt: "web admin panel products page",
+      },
+      {
+        img: "https://firebasestorage.googleapis.com/v0/b/hosting-storage-403c5.appspot.com/o/projects%2Fredcamia%2Finventory-system-4-min.png?alt=media&token=61294485-076b-4ecf-9835-e629ae9268a2",
         alt: "web admin panel users page",
       },
     ],

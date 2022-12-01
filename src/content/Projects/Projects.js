@@ -31,6 +31,7 @@ function Projects() {
               key={index}
               mImgData={data.mImgData}
               title={data.title}
+              type={data.type}
               desc={data.desc}
               liveLink={data.liveLink}
               githubLink={data.githubLink}

@@ -1,121 +1,120 @@
 .contentStyle {
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    -webkit-clip-path: polygon(100% 40%, 100% 100%, 40% 100%);
-    clip-path: polygon(100% 40%, 100% 100%, 40% 100%);
-    background: var(--black-gray);
-    z-index: 0;
-    min-height: calc(480px + 65px);
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  -webkit-clip-path: polygon(100% 40%, 100% 100%, 40% 100%);
+  clip-path: polygon(100% 40%, 100% 100%, 40% 100%);
+  background: var(--black-gray);
+  z-index: 0;
+  min-height: calc(480px + 65px);
 }
 
 .flexSB {
-    height: calc(100vh - 65px);
-    display: flex;
-    flex-wrap: wrap-reverse;
-    justify-content: space-between;
-    overflow: hidden;
-    min-height: 480px;
+  height: calc(100vh - 65px);
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-between;
+  overflow: hidden;
+  min-height: 480px;
 }
 
 .homeInfo {
-    width: 45%;
-    align-self: center;
-    padding: 0 20px;
-    z-index: -1;
+  width: 45%;
+  align-self: center;
+  padding: 0 20px;
+  z-index: 0;
 }
 
 .homeInfoMe {
-    font-size: 3rem;
-    font-weight: 800;
-    color: var(--dark-blue);
-    letter-spacing: 0.6px;
-    font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--dark-blue);
+  letter-spacing: 0.6px;
+  font-family: "Montserrat Alternates", sans-serif;
 }
 
 .homeInfoWork {
-    font-weight: 600;
-    margin-bottom: 5px;
-    color: var(--red-orange);
-    font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: var(--red-orange);
+  font-size: 1.2rem;
 }
 
 .homeInfoP {
-    font-weight: 500;
-    color: var(--dark-blue);
-    margin-bottom: 20px;
-    letter-spacing: 0.4px;
+  font-weight: 500;
+  color: var(--dark-blue);
+  margin-bottom: 20px;
+  letter-spacing: 0.4px;
 }
 
 .pickMeButton {
-    padding: 8px 10px;
-    background-color: var(--red-orange);
-    color: var(--white);
-    border-radius: 5px;
-    font-size: 1rem;
-    font-weight: 600;
-    border: 1px solid #f0f0f0;
+  padding: 8px 10px;
+  background-color: var(--red-orange);
+  color: var(--white);
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 1px solid #f0f0f0;
 }
 
 .pickMeButton a {
-    text-decoration: none;
-    color: var(--white);
-    letter-spacing: 0.8px;
+  text-decoration: none;
+  color: var(--white);
+  letter-spacing: 0.8px;
 }
 
 .homeImg {
-    width: 45%;
-    height: 90%;
-    text-align: center;
-    z-index: 1;
-    overflow: hidden;
+  width: 45%;
+  height: 90%;
+  text-align: center;
+  z-index: 1;
+  overflow: hidden;
 }
 
 .imgStyle {
-    height: 100%;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  object-position: bottom;
+}
+
+@media (max-width: 768px) {
+  .contentStyle {
+    -webkit-clip-path: polygon(100% 60%, 60% 100%, 100% 100%);
+    clip-path: polygon(100% 60%, 60% 100%, 100% 100%);
+    min-height: 480px;
+  }
+
+  .flexSB {
+    height: 100vh;
+  }
+
+  .homeInfo {
+    width: 100%;
+  }
+
+  .homeInfoMe {
+    font-size: 2.4rem;
+  }
+
+  .imgStyle {
+    height: 200px;
     width: 100%;
     object-fit: contain;
-    object-position: bottom;
+  }
+
+  .homeImg {
+    display: none;
+    width: 100%;
+  }
 }
 
-@media (max-width:768px) {
-    .contentStyle {
-        -webkit-clip-path: polygon(100% 60%, 60% 100%, 100% 100%);
-        clip-path: polygon(100% 60%, 60% 100%, 100% 100%);
-        min-height: 480px;
-    }
+@media (max-width: 480px) {
+  .homeInfoMe {
+    font-size: 1.4rem;
+  }
 
-    .flexSB {
-        height: 100vh;
-    }
-
-    .homeInfo {
-        width: 100%;
-    }
-
-    .homeInfoMe {
-        font-size: 2.4rem;
-    }
-
-    .imgStyle {
-        height: 200px;
-        width: 100%;
-        object-fit: contain;
-    }
-
-    .homeImg {
-        display: none;
-        width: 100%;
-    }
-
-}
-
-@media (max-width:480px) {
-    .homeInfoMe {
-        font-size: 1.4rem;
-    }
-
-    .homeInfoWork {
-        font-size: 1rem;
-    }
+  .homeInfoWork {
+    font-size: 1rem;
+  }
 }
