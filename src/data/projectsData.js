@@ -1,8 +1,39 @@
-const projectsData = [
+export const projectsData = [
+  {
+    title: "Mi Portfolio",
+    type: "Website Portfolio",
+    desc: "To showcase academic projects, self-projects, skills and profiles.",
+    liveLink: "https://redcamiainventorysystem.000webhostapp.com/login.php",
+    githubLink:
+      "https://github.com/Ronald-Bn/mobile-ordering-system-web-admin-panel",
+    mImgData: [
+      {
+        img: "https://firebasestorage.googleapis.com/v0/b/hosting-storage-403c5.appspot.com/o/projects%2Fredcamia%2Finventory-system-min.png?alt=media&token=8d2e3bf6-173f-4277-b9fb-71999a32f4cb",
+        alt: "web admin panel login page",
+      },
+      {
+        img: "https://firebasestorage.googleapis.com/v0/b/hosting-storage-403c5.appspot.com/o/projects%2Fredcamia%2Finventory-system-1-min.png?alt=media&token=cd631e7c-0981-4cfb-bb67-49afc16b17fa",
+        alt: "web admin panel login page",
+      },
+      {
+        img: "https://firebasestorage.googleapis.com/v0/b/hosting-storage-403c5.appspot.com/o/projects%2Fredcamia%2Finventory-system-2-min.png?alt=media&token=d9df3054-36fa-4955-a9fe-752ca7df8b68",
+        alt: "web admin panel home page",
+      },
+      {
+        img: "https://firebasestorage.googleapis.com/v0/b/hosting-storage-403c5.appspot.com/o/projects%2Fredcamia%2Finventory-system-3-min.png?alt=media&token=2abc4d94-e330-4019-9e6b-53d8fad34dcc",
+        alt: "web admin panel products page",
+      },
+      {
+        img: "https://firebasestorage.googleapis.com/v0/b/hosting-storage-403c5.appspot.com/o/projects%2Fredcamia%2Finventory-system-4-min.png?alt=media&token=61294485-076b-4ecf-9835-e629ae9268a2",
+        alt: "web admin panel users page",
+      },
+    ],
+    techStackLists: ["Reactjs", "React Router", "Framer Motion"],
+  },
   {
     title: "Facebook Mobile",
     type: "Clone Website",
-    desc: "Duplicated facebook mobile version using the tech stack below.",
+    desc: "To enhance web skills and learn new web tools that make the clone as identical as possible. For instance, material UI.",
     liveLink: "https://mobile-facebook-clone.vercel.app/",
     githubLink: "https://github.com/Ronald-Bn/mobile-facebook-clone",
     mImgData: [
@@ -23,11 +54,7 @@ const projectsData = [
         alt: "Facebook saved",
       },
     ],
-    techStackLists: [
-      { techLists: "Reactjs" },
-      { techLists: "Firebase" },
-      { techLists: "Material UI" },
-    ],
+    techStackLists: ["Reactjs", "Firebase", "Material UI"],
   },
   {
     title: "Wiki Pirates",
@@ -53,11 +80,7 @@ const projectsData = [
         alt: "pirates page four",
       },
     ],
-    techStackLists: [
-      { techLists: "HTML" },
-      { techLists: "CSS" },
-      { techLists: "Webpack" },
-    ],
+    techStackLists: ["HTML", "CSS", "Webpack"],
   },
   {
     title: "Consultant Hub",
@@ -83,84 +106,11 @@ const projectsData = [
         alt: "consultant-hub contact-section",
       },
     ],
-    techStackLists: [
-      { techLists: "HTML" },
-      { techLists: "CSS" },
-      { techLists: "jQuery" },
-    ],
-  },
-  {
-    title: "Mobile Ordering System",
-    type: "Mobile Application",
-    desc: "An Android application with One time Password or OTP phone number authentication",
-    liveLink:
-      "https://apkfab.com/chasy-products/com.example.capstoneprojectv13/apk?h=0002ab071de690bbe337c449fcea1a7b925ad593321dde793e63642f3b3037bc",
-    githubLink:
-      "https://github.com/Ronald-Bn/mobile-ordering-system-mobile-app",
-    mImgData: [
-      {
-        img: "https://firebasestorage.googleapis.com/v0/b/hosting-storage-403c5.appspot.com/o/projects%2Fmobile-app%2Fmobile-app-min.png?alt=media&token=c8300de7-726e-4f12-9999-db86a62ffa4d",
-        alt: "consultant-hub hero-section",
-      },
-      {
-        img: "https://firebasestorage.googleapis.com/v0/b/hosting-storage-403c5.appspot.com/o/projects%2Fmobile-app%2Fmobile-app-1-min.png?alt=media&token=f26565dc-8c19-42d8-8359-fb17dbbddf9d",
-        alt: "consultant-hub services-section",
-      },
-      {
-        img: "https://firebasestorage.googleapis.com/v0/b/hosting-storage-403c5.appspot.com/o/projects%2Fmobile-app%2Fmobile-app-2-min.png?alt=media&token=b3e44af5-5fcd-4a9e-ba1d-7e671d3e5f77",
-        alt: "consultant-hub about-section",
-      },
-      {
-        img: "https://firebasestorage.googleapis.com/v0/b/hosting-storage-403c5.appspot.com/o/projects%2Fmobile-app%2Fmobile-app-3-min.png?alt=media&token=f0325f84-c3d9-4902-b5e6-24e067f4150c",
-        alt: "consultant-hub contact-section",
-      },
-    ],
-    techStackLists: [
-      { techLists: "Android studio" },
-      { techLists: "XML" },
-      { techLists: "Java" },
-      { techLists: "SDK" },
-      { techLists: "Firebase" },
-    ],
-  },
-  {
-    title: "Mobile Ordering System",
-    type: "Admin Panel Website",
-    desc: "A web admin panel that manage the orders and users in Mobile Ordering System.",
-    liveLink: "https://chasyproducts.000webhostapp.com/login.php",
-    githubLink:
-      "https://github.com/Ronald-Bn/mobile-ordering-system-web-admin-panel",
-    mImgData: [
-      {
-        img: "https://firebasestorage.googleapis.com/v0/b/hosting-storage-403c5.appspot.com/o/projects%2Fweb-admin-panel%2Fadmin-panel-min.png?alt=media&token=0642b2cf-66bb-4eb8-97c3-253c8ecd584d",
-        alt: "web admin panel login page",
-      },
-      {
-        img: "https://firebasestorage.googleapis.com/v0/b/hosting-storage-403c5.appspot.com/o/projects%2Fweb-admin-panel%2Fadmin-panel-1-min.png?alt=media&token=4672f603-1474-4e9e-b908-86fad9e6553d",
-        alt: "web admin panel home page",
-      },
-      {
-        img: "https://firebasestorage.googleapis.com/v0/b/hosting-storage-403c5.appspot.com/o/projects%2Fweb-admin-panel%2Fadmin-panel-2-min.png?alt=media&token=7cce7eb0-d7f0-43ff-afc7-4a07b32d8a7e",
-        alt: "web admin panel products page",
-      },
-      {
-        img: "https://firebasestorage.googleapis.com/v0/b/hosting-storage-403c5.appspot.com/o/projects%2Fweb-admin-panel%2Fadmin-panel-3-min.png?alt=media&token=58aefd2a-21af-4abd-bd89-2e466d43d2a6",
-        alt: "web admin panel users page",
-      },
-    ],
-    techStackLists: [
-      { techLists: "HTML" },
-      { techLists: "CSS" },
-      { techLists: "Javascript" },
-      { techLists: "jQuery" },
-      { techLists: "Ajax" },
-      { techLists: "Php" },
-      { techLists: "Firebase" },
-    ],
+    techStackLists: ["HTML", "CSS", "jQuery"],
   },
   {
     title: "Red Camia",
-    type: "Inventory System",
+    type: "Inventory Web App",
     desc: "A web admin panel that manage the orders and users in Mobile Ordering System.",
     liveLink: "https://redcamiainventorysystem.000webhostapp.com/login.php",
     githubLink:
@@ -188,15 +138,76 @@ const projectsData = [
       },
     ],
     techStackLists: [
-      { techLists: "HTML" },
-      { techLists: "CSS" },
-      { techLists: "Javascript" },
-      { techLists: "jQuery" },
-      { techLists: "Ajax" },
-      { techLists: "Php" },
-      { techLists: "Firebase" },
+      "HTML",
+      "CSS",
+      "Javascript",
+      "jQuery",
+      "Ajax",
+      "Php",
+      "Firebase",
+    ],
+  },
+  {
+    title: "Chasy Products",
+    type: "Mobile App",
+    desc: "Sms Notifications, Firebase OTP Authentication, E-commerce.",
+    liveLink:
+      "https://apkfab.com/chasy-products/com.example.capstoneprojectv13/apk?h=0002ab071de690bbe337c449fcea1a7b925ad593321dde793e63642f3b3037bc",
+    githubLink:
+      "https://github.com/Ronald-Bn/mobile-ordering-system-mobile-app",
+    mImgData: [
+      {
+        img: "https://firebasestorage.googleapis.com/v0/b/hosting-storage-403c5.appspot.com/o/projects%2Fmobile-app%2Fmobile-app-min.png?alt=media&token=c8300de7-726e-4f12-9999-db86a62ffa4d",
+        alt: "consultant-hub hero-section",
+      },
+      {
+        img: "https://firebasestorage.googleapis.com/v0/b/hosting-storage-403c5.appspot.com/o/projects%2Fmobile-app%2Fmobile-app-1-min.png?alt=media&token=f26565dc-8c19-42d8-8359-fb17dbbddf9d",
+        alt: "consultant-hub services-section",
+      },
+      {
+        img: "https://firebasestorage.googleapis.com/v0/b/hosting-storage-403c5.appspot.com/o/projects%2Fmobile-app%2Fmobile-app-2-min.png?alt=media&token=b3e44af5-5fcd-4a9e-ba1d-7e671d3e5f77",
+        alt: "consultant-hub about-section",
+      },
+      {
+        img: "https://firebasestorage.googleapis.com/v0/b/hosting-storage-403c5.appspot.com/o/projects%2Fmobile-app%2Fmobile-app-3-min.png?alt=media&token=f0325f84-c3d9-4902-b5e6-24e067f4150c",
+        alt: "consultant-hub contact-section",
+      },
+    ],
+    techStackLists: ["Android studio", "XML", "Java", "SDK", "Firebase"],
+  },
+  {
+    title: "Chasy Products",
+    type: "Admin Web App",
+    desc: "Manage orders and users in mobile ordering application.",
+    liveLink: "https://chasyproducts.000webhostapp.com/login.php",
+    githubLink:
+      "https://github.com/Ronald-Bn/mobile-ordering-system-web-admin-panel",
+    mImgData: [
+      {
+        img: "https://firebasestorage.googleapis.com/v0/b/hosting-storage-403c5.appspot.com/o/projects%2Fweb-admin-panel%2Fadmin-panel-min.png?alt=media&token=0642b2cf-66bb-4eb8-97c3-253c8ecd584d",
+        alt: "web admin panel login page",
+      },
+      {
+        img: "https://firebasestorage.googleapis.com/v0/b/hosting-storage-403c5.appspot.com/o/projects%2Fweb-admin-panel%2Fadmin-panel-1-min.png?alt=media&token=4672f603-1474-4e9e-b908-86fad9e6553d",
+        alt: "web admin panel home page",
+      },
+      {
+        img: "https://firebasestorage.googleapis.com/v0/b/hosting-storage-403c5.appspot.com/o/projects%2Fweb-admin-panel%2Fadmin-panel-2-min.png?alt=media&token=7cce7eb0-d7f0-43ff-afc7-4a07b32d8a7e",
+        alt: "web admin panel products page",
+      },
+      {
+        img: "https://firebasestorage.googleapis.com/v0/b/hosting-storage-403c5.appspot.com/o/projects%2Fweb-admin-panel%2Fadmin-panel-3-min.png?alt=media&token=58aefd2a-21af-4abd-bd89-2e466d43d2a6",
+        alt: "web admin panel users page",
+      },
+    ],
+    techStackLists: [
+      "HTML",
+      "CSS",
+      "Javascript",
+      "jQuery",
+      "Ajax",
+      "Php",
+      "Firebase",
     ],
   },
 ];
-
-export default projectsData;

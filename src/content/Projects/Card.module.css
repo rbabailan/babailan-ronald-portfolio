@@ -1,64 +1,36 @@
-.projectsList {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 20px 2em 20px;
-}
-
-.projectsList:nth-child(odd) {
-  flex-direction: row-reverse;
-}
-
-.projectsList:nth-child(odd) .description {
-  width: 49%;
-  padding: 12px 10px;
-  background-color: var(--black-gray);
-  color: var(--white);
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-}
-
-.projectsList:nth-child(even) .description {
-  box-shadow: 6px 2px 8px 2px rgba(41, 50, 65, 0.59);
-  -webkit-box-shadow: 6px 2px 8px 2px rgba(41, 50, 65, 0.59);
-  -moz-box-shadow: 6px 2px 8px 2px rgba(41, 50, 65, 0.59);
-}
-
-.primaryImg {
-  width: 60%;
-  box-shadow: rgba(0, 0, 0, 0.15) -1.95px -1.95px 2.6px;
-}
-
-.primaryImg img {
-  object-fit: contain;
-  aspect-ratio: auto 1360 / 768;
-}
-
-.description {
-  width: 49%;
+.card {
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.75);
   padding: 12px 10px;
   background-color: var(--white);
   color: var(--black-gray);
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.description h1 {
+.card h1 {
   display: inline;
   font-weight: 700;
   font-size: 1.3rem;
 }
 
-.description h4::before {
+.card h4::before {
   content: " ";
 }
 
-.description h4 {
+.card h4 {
   display: inline;
   font-weight: 500;
   font-size: 1rem;
 }
 
-.description p {
-  font-size: 1rem;
-  margin-bottom: 5px;
+.descWrapper {
+  font-size: 0.9rem;
+}
+
+.descWrapper button {
+  display: inline;
 }
 
 .projectLinks {
@@ -93,7 +65,7 @@
   font-weight: 400;
 }
 
-.description li::before {
+.card li::before {
   content: "/";
 }
 

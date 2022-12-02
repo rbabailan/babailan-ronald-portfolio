@@ -7,6 +7,8 @@
   --red-orange: #ee6c4d;
   --black-gray: #293241;
   --white: #fff;
+  --light-bg: #f0f0f0;
+  --red-orange-hover: rgb(202, 79, 49);
 }
 
 * {
@@ -14,6 +16,10 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", Helvetica, sans-serif;
+}
+
+p {
+  user-select: none;
 }
 
 /* width */
