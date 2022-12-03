@@ -18,7 +18,9 @@
   font-family: "Poppins", Helvetica, sans-serif;
 }
 
-p {
+p,
+h2,
+h4 {
   user-select: none;
 }
 

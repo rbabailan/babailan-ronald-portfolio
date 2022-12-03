@@ -12,14 +12,15 @@ function About() {
       <div className={style.clipPath}></div>
       <div style={{ position: "relative" }}>
         <div style={{ position: "absolute", zIndex: "1" }}>
-          <motion.button
-            initial={{ scale: 0, rotate: 360 }}
-            animate={{ scale: 1, rotate: 0 }}
-            transition={{ duration: 1 }}
-            className={style.backButton}
-            onClick={() => navigate("/")}>
-            <img className={style.backIcon} src={BackIcon} alt="back icon" />
-          </motion.button>
+          <button className={style.backButton} onClick={() => navigate("/")}>
+            <img
+              className={style.backIcon}
+              src={BackIcon}
+              alt="back icon"
+              width="36px"
+              height="36px"
+            />
+          </button>
         </div>
       </div>
       <div className={style.aboutSection}>
@@ -29,10 +30,10 @@ function About() {
               initial={{ opacity: 0, x: -100 }}
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -100 }}
-              transition={{ duration: 0.6 }}>
+              transition={{ duration: 0.6 }}
+              className={style.hireContainer}>
               <div className={style.aboutPartTitle}>
-                <h2>ABOUT</h2>
-                <p></p>
+                <h2>WHY SHOULD YOU HIRE ME?</h2>
               </div>
               <div className={style.aboutPartContents}>
                 <p>
@@ -52,11 +53,10 @@ function About() {
               initial={{ opacity: 0, x: 100 }}
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: 100 }}
-              transition={{ duration: 0.6 }}>
-              <div className={style.skillsPartTitle}>
-                <h2>SKILLS</h2>
-                <p>Tech tools and frameworks that I've used.</p>
-              </div>
+              transition={{ duration: 0.6 }}
+              className={style.skillsContainer}>
+              <h2>SKILLS</h2>
+              <p>Tech tools and frameworks that I've used.</p>
               <div className={style.skillsPartContents}>
                 <ul className={style.hardSkillsLists}>
                   <List

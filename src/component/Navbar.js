@@ -30,6 +30,7 @@ function Navbar() {
               src={menu}
               alt="menu-icon"
               width="36px"
+              height="36px"
             />
           </button>
         </div>

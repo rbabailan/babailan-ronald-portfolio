@@ -27,14 +27,15 @@ function Projects() {
     <div style={{ overflowX: "hidden" }}>
       <div className={style.clipPath}></div>
       <div style={{ position: "absolute", zIndex: "1" }}>
-        <motion.button
-          initial={{ scale: 0, rotate: 360 }}
-          animate={{ scale: 1, rotate: 0 }}
-          transition={{ duration: 1 }}
-          className={style.backButton}
-          onClick={() => navigate("/")}>
-          <img className={style.backIcon} src={BackIcon} alt="back icon" />
-        </motion.button>
+        <button className={style.backButton} onClick={() => navigate("/")}>
+          <img
+            className={style.backIcon}
+            src={BackIcon}
+            alt="back icon"
+            width="36px"
+            height="36px"
+          />
+        </button>
       </div>
       <div className={style.projectsDiv}>
         <div className={style.projectTitle}>

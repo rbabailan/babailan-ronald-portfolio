@@ -12,7 +12,7 @@
   border-radius: 50%;
   border: none;
   margin: 14px;
-  height: 36px;
+  background-color: var(--white);
 }
 
 .backIcon {
