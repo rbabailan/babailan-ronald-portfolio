@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import style from "./Home.module.css";
 import { motion } from "framer-motion";
 import Navbar from "../../component/Navbar";
 import ProfilePic from "../../img/ronald.png";
-import { Link } from "react-router-dom";
 
 function Home() {
   const animations = {
@@ -14,7 +13,6 @@ function Home() {
 
   return (
     <motion.div style={{ overflowX: "hidden" }}>
-      <motion.div className={style.contentStyle}></motion.div>
       <Navbar />
       <div className={style.flexSB}>
         <motion.div

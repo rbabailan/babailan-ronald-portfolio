@@ -17,6 +17,7 @@ function App() {
   return (
     <>
       <div className="App">
+        <div className="clipPath"></div>
         <AnimatePresence mode="wait">
           <Routes location={location} key={location.pathname}>
             <Route path="/" element={<Home />} />

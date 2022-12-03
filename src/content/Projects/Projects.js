@@ -1,16 +1,13 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
-import BackIcon from "../../img/BackIcon.png";
 import { motion } from "framer-motion";
 import style from "./Projects.module.css";
 import Card from "./Card";
 import { buttons } from "../../data/buttonsData";
 import { getTechStack } from "../../services/getTechStack";
 import { filterTechStack } from "../../services/filterTechStack";
+import BackButton from "../../component/BackButton";
 
 function Projects() {
-  const navigate = useNavigate();
-
   const [filteredProjects, setFilteredProjects] = useState(null);
   useEffect(() => {
     setFilteredProjects(getTechStack());
@@ -27,15 +24,7 @@ function Projects() {
     <div style={{ overflowX: "hidden" }}>
       <div className={style.clipPath}></div>
       <div style={{ position: "absolute", zIndex: "1" }}>
-        <button className={style.backButton} onClick={() => navigate("/")}>
-          <img
-            className={style.backIcon}
-            src={BackIcon}
-            alt="back icon"
-            width="36px"
-            height="36px"
-          />
-        </button>
+        <BackButton />
       </div>
       <div className={style.projectsDiv}>
         <div className={style.projectTitle}>

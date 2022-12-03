@@ -1,26 +1,15 @@
 import React from "react";
 import style from "./About.module.css";
-import { useNavigate } from "react-router-dom";
-import BackIcon from "../../img/BackIcon.png";
 import { motion } from "framer-motion";
 import List from "./list/list";
+import BackButton from "../../component/BackButton";
 
 function About() {
-  const navigate = useNavigate();
   return (
     <div style={{ overflowX: "hidden" }}>
-      <div className={style.clipPath}></div>
       <div style={{ position: "relative" }}>
         <div style={{ position: "absolute", zIndex: "1" }}>
-          <button className={style.backButton} onClick={() => navigate("/")}>
-            <img
-              className={style.backIcon}
-              src={BackIcon}
-              alt="back icon"
-              width="36px"
-              height="36px"
-            />
-          </button>
+          <BackButton />
         </div>
       </div>
       <div className={style.aboutSection}>

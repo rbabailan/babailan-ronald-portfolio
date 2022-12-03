@@ -1,8 +1,6 @@
 import React, { useRef } from "react";
 import style from "./Contacts.module.css";
-import AnimatedPage from "../../component/AnimatedPage";
 import { motion } from "framer-motion";
-import { useNavigate } from "react-router-dom";
 import BackIcon from "../../img/BackIcon.png";
 import facebookIcon from "../../img/facebook.svg";
 import githubIcon from "../../img/github.svg";
@@ -14,24 +12,14 @@ import HackerRankIcon from "../../img/hackerrank.svg";
 import ContactLinks from "./ContactLinks";
 import ReactToolTip from "react-tooltip";
 import FreeCodeCampIcon from "../../img/freecodecamp.svg";
+import BackButton from "../../component/BackButton";
 
 function Contacts() {
-  const navigate = useNavigate();
-
   return (
     <div style={{ overflowX: "hidden" }}>
-      <div className={style.clipPath}></div>
       <div style={{ position: "relative" }}>
         <div style={{ position: "absolute", zIndex: "1" }}>
-          <button className={style.backButton} onClick={() => navigate("/")}>
-            <img
-              className={style.backIcon}
-              src={BackIcon}
-              alt="back icon"
-              width="36px"
-              height="36px"
-            />
-          </button>
+          <BackButton />
         </div>
       </div>
       <div className={style.contactSection}>

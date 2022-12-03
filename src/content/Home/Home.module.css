@@ -1,14 +1,3 @@
-.contentStyle {
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  -webkit-clip-path: polygon(100% 40%, 100% 100%, 40% 100%);
-  clip-path: polygon(100% 40%, 100% 100%, 40% 100%);
-  background: var(--black-gray);
-  z-index: 0;
-  min-height: calc(480px + 65px);
-}
-
 .flexSB {
   height: calc(100vh - 65px);
   display: flex;
@@ -79,12 +68,6 @@
 }
 
 @media (max-width: 768px) {
-  .contentStyle {
-    -webkit-clip-path: polygon(100% 60%, 60% 100%, 100% 100%);
-    clip-path: polygon(100% 60%, 60% 100%, 100% 100%);
-    min-height: 480px;
-  }
-
   .flexSB {
     height: 100vh;
   }
