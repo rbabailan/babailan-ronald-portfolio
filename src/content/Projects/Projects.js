@@ -22,10 +22,7 @@ function Projects() {
 
   return (
     <div style={{ overflowX: "hidden" }}>
-      <div className={style.clipPath}></div>
-      <div style={{ position: "absolute", zIndex: "1" }}>
-        <BackButton />
-      </div>
+      <BackButton />
       <div className={style.projectsDiv}>
         <div className={style.projectTitle}>
           <h2>PROJECTS</h2>

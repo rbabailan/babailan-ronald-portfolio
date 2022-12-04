@@ -1,17 +1,19 @@
 import React from "react";
 import style from "./About.module.css";
 import { motion } from "framer-motion";
-import List from "./list/list";
+import List from "./list/List";
 import BackButton from "../../component/BackButton";
+import {
+  WebTools,
+  ProgLang,
+  VCAndOthers,
+  DatabaseAndWH,
+} from "../../data/LogosData";
 
 function About() {
   return (
     <div style={{ overflowX: "hidden" }}>
-      <div style={{ position: "relative" }}>
-        <div style={{ position: "absolute", zIndex: "1" }}>
-          <BackButton />
-        </div>
-      </div>
+      <BackButton />
       <div className={style.aboutSection}>
         <div className={style.flexSB}>
           <div className={style.aboutPart}>
@@ -46,23 +48,21 @@ function About() {
               className={style.skillsContainer}>
               <h2>SKILLS</h2>
               <p>Tech tools and frameworks that I've used.</p>
-              <div className={style.skillsPartContents}>
-                <ul className={style.hardSkillsLists}>
+              <div>
+                <ul>
                   <List
-                    title={"Front-End Tools"}
-                    text={"HTML CSS Javascript"}></List>
+                    title={"Web Technologies Tools"}
+                    ImageLogos={WebTools}
+                  />
+                  <List title={"Programming languages"} ImageLogos={ProgLang} />
                   <List
-                    title={"Framework/Library "}
-                    text={"React Framer Motion Bootstrap"}></List>
-                  <List
-                    title={"Database management"}
-                    text={"MySQL Firebase MongoDB"}></List>
-                  <List
-                    title={"Programming languages"}
-                    text={"Python Java PHP"}></List>
+                    title={"Database/Web Hosting Services"}
+                    ImageLogos={DatabaseAndWH}
+                  />
                   <List
                     title={"Version Control & Others"}
-                    text={"Git, GitHub, Vercel, 000webhost"}></List>
+                    ImageLogos={VCAndOthers}
+                  />
                 </ul>
               </div>
             </motion.div>

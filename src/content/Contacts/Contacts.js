@@ -1,7 +1,6 @@
-import React, { useRef } from "react";
+import React from "react";
 import style from "./Contacts.module.css";
 import { motion } from "framer-motion";
-import BackIcon from "../../img/BackIcon.png";
 import facebookIcon from "../../img/facebook.svg";
 import githubIcon from "../../img/github.svg";
 import twitterIcon from "../../img/twitter.svg";
@@ -17,21 +16,10 @@ import BackButton from "../../component/BackButton";
 function Contacts() {
   return (
     <div style={{ overflowX: "hidden" }}>
-      <div style={{ position: "relative" }}>
-        <div style={{ position: "absolute", zIndex: "1" }}>
-          <BackButton />
-        </div>
-      </div>
+      <BackButton />
       <div className={style.contactSection}>
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1 }}
-          className={style.contactSectionTitle}>
-          <h2>Profiles</h2>
-          <p>Social accounts</p>
-        </motion.div>
-        <div className={style.flexSB}>
+        <div className={style.contactContainer}>
+          <h2>PROFILES</h2>
           <div className={style.contactInfo}>
             <motion.div
               initial={{ opacity: 0, x: -200 }}

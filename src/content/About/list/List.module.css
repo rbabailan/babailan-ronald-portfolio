@@ -2,11 +2,13 @@
   display: block;
   padding: 5px 10px 5px 5px;
   position: relative;
-  border-top: 1px solid var(--white);
-  border-left: 4px solid var(--white);
 }
 
 .skillLists {
   list-style: none;
   margin-bottom: 5px;
+}
+
+.skillLists p {
+  text-align: left !important;
 }

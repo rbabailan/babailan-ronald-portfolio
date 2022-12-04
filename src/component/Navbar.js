@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import style from "./Navbar.module.css";
-import menu from "../img/menu.png";
-import exit from "../img/exit.png";
+import menu from "../img/MenuIcon.svg";
+import exit from "../img/CloseIcon.svg";
 
 function Navbar() {
   const [toggleNav, setToggleNav] = useState(false);
@@ -49,10 +49,10 @@ function Navbar() {
         <nav>
           <ul>
             <li>
-              <Link to="/Projects">Projects</Link>
+              <Link to="/About">Why Hire Me?</Link>
             </li>
             <li>
-              <Link to="/About">Why Hire Me?</Link>
+              <Link to="/Projects">Projects</Link>
             </li>
             <li>
               <Link to="/contacts">Profiles</Link>

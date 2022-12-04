@@ -1,21 +1,12 @@
-.clipPath {
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-  -webkit-clip-path: polygon(100% 40%, 100% 100%, 40% 100%);
-  clip-path: polygon(100% 40%, 100% 100%, 40% 100%);
-  background: var(--black-gray);
-  z-index: -1;
-}
-
 .projectTitle {
   padding: 14px 20px;
+  color: var(--dark-blue);
 }
 
 .projectTitle h2 {
-  font-size: 3rem;
-  font-weight: 800;
-  color: var(--dark-blue);
+  font-size: 2.6rem;
+  font-weight: 900;
+  text-shadow: 3px 2px 1px rgba(0, 0, 0, 0.2);
   letter-spacing: 0.6px;
   text-align: center;
   line-height: 0.9;
@@ -68,18 +59,21 @@
     gap: 10px;
     padding: 10px;
   }
+
+  .projectTitle {
+    margin-top: 32px;
+  }
 }
 
 @media (max-width: 768px) {
   .projectTitle h2 {
-    font-size: 1.6rem;
+    font-size: 2rem;
   }
 }
 
 @media (max-width: 480px) {
   .projectTitle h2 {
-    line-height: 2;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
   }
 
   .projectTitle p {

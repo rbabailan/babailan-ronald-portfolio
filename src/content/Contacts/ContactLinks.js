@@ -19,6 +19,7 @@ function ContactLinks(props) {
           src={props.icon}
           alt={props.tooltip + "-logo"}
           width="50px"
+          height="50px"
         />
       </a>
       {text && <p>{props.text}</p>}

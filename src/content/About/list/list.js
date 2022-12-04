@@ -1,12 +1,22 @@
-import style from "./style.module.css";
+import style from "./List.module.css";
+import ImageLogo from "../ImageLogo";
 
-function List({ title, text }) {
+function List({ title, ImageLogos }) {
+  console.log(ImageLogos);
   return (
     <>
       <li className={style.skillLists}>
         <p>{title}</p>
-        <div className={style.line}></div>
-        <small className={style.text}>{text}</small>
+        <div style={{ display: "flex", columnGap: "10px", flexWrap: "wrap" }}>
+          {ImageLogos &&
+            ImageLogos.map((data, index) => (
+              <ImageLogo
+                key={index}
+                icon={data.svgUrl}
+                tooltip={data.tooltip}
+              />
+            ))}
+        </div>
       </li>
     </>
   );

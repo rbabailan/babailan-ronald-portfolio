@@ -1,27 +1,23 @@
 .contactSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   width: 100%;
-  color: #fff;
 }
 
-.contactSectionTitle {
-  padding: 14px 20px;
-}
-
-.contactSectionTitle h2 {
-  font-size: 3rem;
-  font-weight: 800;
+.contactContainer h2 {
+  font-size: 2.6rem;
+  font-weight: 900;
+  color: var(--dark-blue);
+  text-shadow: 3px 2px 1px rgba(0, 0, 0, 0.2);
   letter-spacing: 0.6px;
   text-align: center;
   line-height: 0.9;
-}
-
-.contactSectionTitle p {
-  text-align: center;
+  margin-bottom: 5px;
 }
 
 .contactInfo {
-  width: 50%;
-  margin: 0 auto;
   display: grid;
   grid-template-columns: auto auto auto;
   gap: 8px;
@@ -34,6 +30,7 @@
   padding: 30px;
   display: flex;
   align-items: center;
+  color: var(--white);
 }
 
 .contactInfo div:nth-child(1) {
@@ -66,15 +63,25 @@
 
 .contactInfo div a img {
   width: 50px;
+  height: 50px;
 }
 
 @media (max-width: 768px) {
-  .contactInfo {
+  .contactSection {
     width: 100%;
+    height: 100%;
   }
 
-  .contactSectionTitle h2 {
+  .contactContainer {
+    padding: 32px 0;
+  }
+
+  .contactContainer h2 {
     font-size: 2rem;
+  }
+
+  .contactInfo {
+    width: 100%;
   }
 
   .contactInfo div {
@@ -98,6 +105,9 @@
     padding: 5px;
   }
 
+  .contactContainer h2 {
+    font-size: 1.6rem;
+  }
   .contactInfo div {
     text-align: center;
     justify-content: center;
