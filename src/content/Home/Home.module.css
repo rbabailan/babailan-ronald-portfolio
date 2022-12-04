@@ -37,7 +37,6 @@
 }
 
 .pickMeButton {
-  padding: 8px 10px;
   background-color: var(--red-orange);
   color: var(--white);
   border-radius: 5px;
@@ -47,6 +46,8 @@
 }
 
 .pickMeButton a {
+  display: block;
+  padding: 8px 10px;
   text-decoration: none;
   color: var(--white);
   letter-spacing: 0.8px;
