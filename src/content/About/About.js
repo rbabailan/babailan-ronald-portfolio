@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./About.module.css";
 import { motion } from "framer-motion";
-import List from "./list/List";
+import List from "./List";
 import BackButton from "../../component/BackButton";
 import {
   WebTools,
