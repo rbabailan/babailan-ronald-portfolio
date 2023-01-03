@@ -15,20 +15,20 @@ function ProjectsList(props) {
       }}
       className={style.card}>
       <h1 className={style.title}>{props.title}</h1>
-      <h4>{"(" + props.type + ")"}</h4>
+      <h4>{`(${props.type})`}</h4>
       <div className={style.descWrapper}>
         <ResponsiveEllipsis text={props.desc} maxLine="1" ellipsis="... " />
       </div>
       <div className={style.projectLinks}>
         <span>
           Live URL: Click
-          <a href={props.liveLink} target="_blank" rel="noopener">
+          <a href={props.liveLink} target="_blank" rel="noopener noreferrer">
             Here
           </a>
         </span>
         <span>
           Github URL: Click
-          <a href={props.githubLink} target="_blank" rel="noopener">
+          <a href={props.githubLink} target="_blank" rel="noopener noreferrer">
             Here
           </a>
         </span>

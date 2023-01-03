@@ -42,7 +42,7 @@ function Navbar() {
         {checkWidth < 768 && (
           <div style={{ position: "absolute", right: 0, top: 0 }}>
             <button className={style.menuButton} onClick={toggleNavFunc}>
-              <img src={exit} width="36px" />
+              <img src={exit} width="36px" alt="close-icon" />
             </button>
           </div>
         )}

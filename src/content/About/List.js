@@ -2,7 +2,6 @@ import style from "./List.module.css";
 import ImageLogo from "./ImageLogo";
 
 function List({ title, ImageLogos }) {
-  console.log(ImageLogos);
   return (
     <>
       <li className={style.skillLists}>
