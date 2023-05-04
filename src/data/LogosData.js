@@ -1,48 +1,101 @@
-import HtmlIcon from "../img/icons8-html-5.svg";
-import CssIcon from "../img/icons8-css3.svg";
-import JavascriptIcon from "../img/icons8-javascript.svg";
-import ReactIcon from "../img/icons8-react.svg";
-import FramerMotionIcon from "../img/icons8-framer-motion.svg";
-import BootStrapIcon from "../img/icons8-bootstrap.svg";
-import WebPackIcon from "../img/icons8-webpack.svg";
-import PythonIcon from "../img/icons8-python.svg";
-import JavaIcon from "../img/icons8-java.svg";
-import PhpIcon from "../img/icons8-php.svg";
-import FirebaseIcon from "../img/icons8-firebase.svg";
-import MySQLIcon from "../img/icons8-mysql.svg";
-import GithubIcon from "../img/icons8-github.svg";
-import GitIcon from "../img/icons8-git.svg";
-import FilmoraIcon from "../img/icons8-filmora.svg";
-import AdobeXdIcon from "../img/icons8-adobe-xd.svg";
-import VercelIcon from "../img/icons8-vercel.svg";
-import HostingerIcon from "../img/icons8-hostinger.svg";
-
 export const WebTools = [
-  { svgUrl: HtmlIcon, tooltip: "HTML" },
-  { svgUrl: CssIcon, tooltip: "CSS" },
-  { svgUrl: JavascriptIcon, tooltip: "Javascript" },
-  { svgUrl: BootStrapIcon, tooltip: "Bootstrap" },
-  { svgUrl: WebPackIcon, tooltip: "WebPack" },
-  { svgUrl: ReactIcon, tooltip: "Reactjs" },
-  { svgUrl: FramerMotionIcon, tooltip: "Framer Motion" },
+  {
+    svgUrl:
+      "https://ik.imagekit.io/f2ityjkpdv/Skills/icons8-html-5.svg?updatedAt=1682603475873",
+    tooltip: "HTML",
+  },
+  {
+    svgUrl:
+      "https://ik.imagekit.io/f2ityjkpdv/Skills/icons8-css3.svg?updatedAt=1682603470819",
+    tooltip: "CSS",
+  },
+  {
+    svgUrl:
+      "https://ik.imagekit.io/f2ityjkpdv/Skills/icons8-javascript.svg?updatedAt=1682603475920",
+    tooltip: "Javascript",
+  },
+  {
+    svgUrl:
+      "https://ik.imagekit.io/f2ityjkpdv/Skills/icons8-bootstrap.svg?updatedAt=1682603470778",
+    tooltip: "Bootstrap",
+  },
+  {
+    svgUrl:
+      "https://ik.imagekit.io/f2ityjkpdv/Skills/icons8-webpack.svg?updatedAt=1682603480644",
+    tooltip: "WebPack",
+  },
+  {
+    svgUrl:
+      "https://ik.imagekit.io/f2ityjkpdv/Skills/icons8-react.svg?updatedAt=1682603480546",
+    tooltip: "Reactjs",
+  },
+  {
+    svgUrl:
+      "https://ik.imagekit.io/f2ityjkpdv/Skills/icons8-framer-motion.svg?updatedAt=1682603475872",
+    tooltip: "Framer Motion",
+  },
 ];
 
 export const ProgLang = [
-  { svgUrl: JavaIcon, tooltip: "Java" },
-  { svgUrl: PhpIcon, tooltip: "Php" },
-  { svgUrl: PythonIcon, tooltip: "Python" },
+  {
+    svgUrl:
+      "https://ik.imagekit.io/f2ityjkpdv/Skills/icons8-java.svg?updatedAt=1682603475898",
+    tooltip: "Java",
+  },
+  {
+    svgUrl:
+      "https://ik.imagekit.io/f2ityjkpdv/Skills/icons8-php.svg?updatedAt=1682603475911",
+    tooltip: "Php",
+  },
+  {
+    svgUrl:
+      "https://ik.imagekit.io/f2ityjkpdv/Skills/icons8-python.svg?updatedAt=1682603475888",
+    tooltip: "Python",
+  },
 ];
 
 export const DatabaseAndWH = [
-  { svgUrl: MySQLIcon, tooltip: "MySQL" },
-  { svgUrl: FirebaseIcon, tooltip: "Firebase" },
-  { svgUrl: VercelIcon, tooltip: "Vercel" },
-  { svgUrl: HostingerIcon, tooltip: "Hostinger" },
+  {
+    svgUrl:
+      "https://ik.imagekit.io/f2ityjkpdv/Skills/icons8-mysql.svg?updatedAt=1682603475882",
+    tooltip: "MySQL",
+  },
+  {
+    svgUrl:
+      "https://ik.imagekit.io/f2ityjkpdv/Skills/icons8-firebase.svg?updatedAt=1682603470850",
+    tooltip: "Firebase",
+  },
+  {
+    svgUrl:
+      "https://ik.imagekit.io/f2ityjkpdv/Skills/icons8-vercel.svg?updatedAt=1682603480612",
+    tooltip: "Vercel",
+  },
+  {
+    svgUrl:
+      "https://ik.imagekit.io/f2ityjkpdv/Skills/icons8-hostinger.svg?updatedAt=1682603475833",
+    tooltip: "Hostinger",
+  },
 ];
 
 export const VCAndOthers = [
-  { svgUrl: GitIcon, tooltip: "Git" },
-  { svgUrl: GithubIcon, tooltip: "GitHub" },
-  { svgUrl: AdobeXdIcon, tooltip: "Adobe XD" },
-  { svgUrl: FilmoraIcon, tooltip: "Filmora" },
+  {
+    svgUrl:
+      "https://ik.imagekit.io/f2ityjkpdv/Skills/icons8-git.svg?updatedAt=1682603475732",
+    tooltip: "Git",
+  },
+  {
+    svgUrl:
+      "https://ik.imagekit.io/f2ityjkpdv/Skills/github.svg?updatedAt=1682603470842",
+    tooltip: "GitHub",
+  },
+  {
+    svgUrl:
+      "https://ik.imagekit.io/f2ityjkpdv/Skills/icons8-adobe-xd.svg?updatedAt=1682603470848",
+    tooltip: "Adobe XD",
+  },
+  {
+    svgUrl:
+      "https://ik.imagekit.io/f2ityjkpdv/Skills/icons8-filmora.svg?updatedAt=1682603470811",
+    tooltip: "Filmora",
+  },
 ];

@@ -15,4 +15,16 @@ export const buttons = [
     name: "PHP",
     value: "Php",
   },
+  {
+    name: "CSS",
+    value: "CSS",
+  },
+  {
+    name: "Firebase",
+    value: "Firebase",
+  },
+  {
+    name: "Javascript",
+    value: "Javascript",
+  },
 ];

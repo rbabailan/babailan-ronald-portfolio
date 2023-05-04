@@ -1,104 +1,125 @@
 .flexSB {
-  height: calc(100vh - 65px);
+  height: calc(100vh - 69px);
   display: flex;
   flex-wrap: wrap-reverse;
   justify-content: space-between;
   overflow: hidden;
-  min-height: 480px;
 }
 
 .homeInfo {
-  width: 45%;
+  width: 100%;
   align-self: center;
-  padding: 0 20px;
   z-index: 0;
 }
 
-.homeInfoMe {
-  font-size: 3rem;
-  font-weight: 800;
-  color: var(--dark-blue);
-  letter-spacing: 0.6px;
-  font-family: "Montserrat Alternates", sans-serif;
-}
-
-.homeInfoWork {
+.name {
+  font-size: clamp(2.6rem, 5vw, 4rem);
   font-weight: 600;
-  margin-bottom: 5px;
-  color: var(--red-orange);
-  font-size: 1.2rem;
+  line-height: 80%;
+  letter-spacing: 0.6px;
+  color: var(--black-gray);
 }
 
-.homeInfoP {
-  font-weight: 500;
-  color: var(--dark-blue);
-  margin-bottom: 20px;
+.work {
+  font-weight: 400;
+  margin: 5px 0;
+  color: var(--red-orange);
+  font-size: 1rem;
+}
+
+.tagline {
+  max-width: 700px;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--black-gray);
+  margin-bottom: 15px;
   letter-spacing: 0.4px;
 }
 
-.pickMeButton {
-  background-color: var(--red-orange);
+.explore {
+  display: inline-block;
+  background-color: var(--black-gray);
   color: var(--white);
-  border-radius: 5px;
+  border-radius: 6px;
   font-size: 1rem;
-  font-weight: 600;
-  border: 1px solid #f0f0f0;
-}
-
-.pickMeButton a {
-  display: block;
-  padding: 8px 10px;
+  font-weight: 400;
+  margin-right: 5px;
   text-decoration: none;
+  padding: 9px 20px;
+}
+
+.explore:hover {
+  background-color: var(--black-gray-hover);
+}
+
+.contact {
+  display: inline-block;
+  background-color: var(--white);
+  border-radius: 6px;
+  color: var(--black-gray);
+  border: 1px solid var(--black-gray);
+  font-size: 1rem;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 9px 20px;
+}
+
+.contact:hover {
+  background-color: var(--black-gray);
   color: var(--white);
-  letter-spacing: 0.8px;
 }
 
-.homeImg {
-  width: 45%;
-  height: 90%;
-  text-align: center;
-  z-index: 1;
-  overflow: hidden;
+@media (max-width: 1980px) {
+  .flexSB {
+    padding: 0 100px;
+  }
 }
 
-.imgStyle {
-  height: 100%;
-  width: 100%;
-  object-fit: contain;
-  object-position: bottom;
+@media (max-width: 1600px) {
+  .flexSB {
+    padding: 0 50px;
+  }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+  .flexSB {
+    padding: 0 20px;
+  }
+  .homeInfo {
+    width: 80%;
+  }
+  .homeInfoP {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 798px) {
   .flexSB {
     height: 100vh;
+    margin: 0 10px;
   }
 
   .homeInfo {
     width: 100%;
   }
 
-  .homeInfoMe {
-    font-size: 2.4rem;
+  .work {
+    margin: 5px 0;
   }
 
-  .imgStyle {
-    height: 200px;
-    width: 100%;
-    object-fit: contain;
-  }
-
-  .homeImg {
-    display: none;
-    width: 100%;
+  .tagline {
+    margin-bottom: 10px;
   }
 }
 
 @media (max-width: 480px) {
-  .homeInfoMe {
-    font-size: 1.4rem;
+  .flexSB {
+    padding: 0 10px;
   }
+}
 
-  .homeInfoWork {
-    font-size: 1rem;
+@media (max-width: 340px) {
+  .flexSB {
+    padding: 10px 0;
   }
 }

@@ -1,51 +1,57 @@
 .projectTitle {
-  padding: 14px 20px;
-  color: var(--dark-blue);
+  padding: 14px 20px 0px;
+  color: var(--black-gray);
 }
 
 .projectTitle h2 {
-  font-size: 2.6rem;
-  font-weight: 900;
-  text-shadow: 3px 2px 1px rgba(0, 0, 0, 0.2);
+  font-size: 2rem;
+  font-weight: 600;
   letter-spacing: 0.6px;
   text-align: center;
-  line-height: 0.9;
+  line-height: 80%;
 }
 
 .projectTitle p {
   font-size: 1rem;
-  font-weight: 500;
-  color: var(--dark-blue);
+  margin: 10px 0;
+  font-weight: 400;
+  color: var(--black-gray);
   letter-spacing: 0.6px;
   text-align: center;
 }
 
-.buttonLists {
+.projectbuttonWrapper {
   display: flex;
+  flex-wrap: wrap;
+  width: min(100%, 600px);
+  gap: 5px;
   justify-content: center;
+  align-content: center;
+  margin: 0 auto;
+  align-items: center;
 }
 
-.buttonLists button {
-  background-color: var(--red-orange);
+.projectbuttonWrapper button {
+  background-color: var(--black-gray);
   color: var(--white);
-  margin: 0 5px 14px;
-  padding: 5px 10px;
-  border-radius: 8px;
+  padding: 5px 15px;
+  border-radius: 20px;
   border: none;
   cursor: pointer;
 }
 
-.buttonLists button:hover {
-  background-color: var(--red-orange-hover);
+.projectbuttonWrapper button:hover {
+  background-color: var(--black-gray-hover);
   color: var(--white);
 }
 
 .projectLists {
   display: grid;
-  grid-template-columns: minmax(300px, 600px) minmax(300px, 600px);
+  grid-template-columns: minmax(250px, 500px) minmax(250px, 500px);
   gap: 10px;
   padding: 10px;
   justify-content: center;
+  margin-top: 10px;
 }
 
 .techStack {
@@ -58,10 +64,6 @@
     grid-template-columns: auto;
     gap: 10px;
     padding: 10px;
-  }
-
-  .projectTitle {
-    margin-top: 32px;
   }
 }
 

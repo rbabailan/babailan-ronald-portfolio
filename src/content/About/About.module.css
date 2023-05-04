@@ -1,79 +1,84 @@
-.aboutSection {
-  height: 100vh;
-}
-
 .flexSB {
   width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+  height: 100%;
+  padding: 0 100px;
+  width: min(100%, 1000px);
+  margin: 0 auto;
 }
 
-.skillsPart,
-.aboutPart {
-  width: 50%;
-  color: var(--dark-blue);
-  font-weight: 500;
-}
-
-.hireContainer {
-  border-radius: 5px;
-  margin: 0 10px;
-  padding: 14px 10px;
-}
-
-.hireContainer h2,
-.skillsContainer h2 {
-  font-size: 2.6rem;
-  font-weight: 900;
-  text-shadow: 3px 2px 1px rgba(0, 0, 0, 0.2);
-  letter-spacing: 0.6px;
-  text-align: center;
+.aboutWrapper h2 {
+  font-size: 2rem;
   line-height: 0.9;
+  font-weight: 600;
+  margin: 14px 20px 0 0;
+  color: var(--black-gray);
 }
 
-.skillsContainer {
-  background-color: rgba(255, 255, 255, 0.9);
-  border-radius: 2px;
-  margin: 0 10px;
-  box-shadow: 3px 4px 0px 3px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 3px 4px 0px 3px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 3px 4px 0px 3px rgba(0, 0, 0, 0.5);
-  padding: 10px;
+.aboutWrapper p {
+  line-height: 2;
+  font-weight: 400;
 }
 
-.skillsContainer p {
-  text-align: center;
+.profileImg {
+  margin: 0 auto;
+  float: right;
+  margin: 10px 0 0 10px;
+  box-shadow: 0px 0px 2px 2px rgba(97, 97, 97, 0.315);
+  -webkit-box-shadow: 0px 0px 2px 2px rgba(97, 97, 97, 0.315);
+  -moz-box-shadow: 0px 0px 2px 2px rgba(97, 97, 97, 0.315);
 }
 
+.introduction {
+  margin-top: 10px;
+  letter-spacing: 0.6px;
+  font-weight: 400;
+  width: min(100%, 1000px);
+}
+
+.educationWrapper {
+  padding: 20px 0;
+}
+
+.educationWrapper h4,
+.skillsWrapper h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+}
+
+.educationWrapper p {
+  font-style: italic;
+}
+
+@media (max-width: 1920px) {
+  .flexSB {
+    padding: 0 100px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .flexSB {
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .flexSB {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 840px) {
+  .profileImg {
+    display: none;
+  }
+}
 @media (max-width: 768px) {
-  .skillsPart,
-  .aboutPart {
-    width: 100%;
+  .flexSB {
+    padding: 0 10px;
   }
 
-  .hireContainer h2,
-  .skillsContainer h2 {
+  .aboutWrapper h2 {
     font-size: 2rem;
-  }
-
-  .hireContainer {
-    margin-top: 32px;
-  }
-
-  .skillsContainer {
-    box-shadow: none;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    margin: 0 0px;
-  }
-}
-
-@media (max-width: 480px) {
-  .hireContainer h2,
-  .skillsContainer h2 {
-    font-size: 1.4rem;
   }
 }
