@@ -16,14 +16,9 @@ import BackButton from "../../component/BackButton";
 function Contacts() {
   return (
     <div style={{ overflowX: "hidden" }}>
-      <BackButton />
-      <div className={style.contactSection}>
-        <div className={style.contactContainer}>
-          <h2>PROFILES</h2>
-          <div className={style.contactInfo}>
-            <motion.div
-              initial={{ opacity: 0, x: -200 }}
-              animate={{ opacity: 1, x: 0 }}
+      <m.div
+        initial={{ opacity: 0, x: -100 }}
+        animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1.5 }}>
               <ContactLinks
                 links="https://www.facebook.com/profile.php?id=100009021094163"
